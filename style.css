@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Barra de navegación */
+.barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #222;
+    color: white;
+}
+
+.barraNavegacion .logo img {
+    height: 50px;
+}
+
+.seccionesNavegacion a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.asesor {
+    display: flex;
+    align-items: center;
+}
+
+.asesor img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+/* Primera sección */
+.primerSeccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #0056b3;
+    color: white;
+}
+
+.primerSeccion h1 {
+    font-size: 36px;
+}
+
+.primerSeccion p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.primerSeccion button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Segunda sección */
+.segundaSeccion {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.segundaSeccion h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cita {
+    font-style: italic;
+    color: #777;
+}
+
+/* Tercera sección (Servicios) */
+.tercerSeccion {
+    text-align: center;
+    padding: 50px;
+    background: #e6e6e6;
+}
+
+.contenedorServicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.servicioTecnico, .solucionesSoftware, .reparacionPantalla {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Sección de marcas */
+.cuartaSeccion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    background: white;
+}
+
+.cuartaSeccion div {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+}
+
+/* Quinta sección (Contacto) */
+.quintaSeccion {
+    text-align: center;
+    padding: 50px;
+    background: #0056b3;
+    color: white;
+}
+
+.botonContacto button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: #222;
+    color: white;
+    padding: 30px;
+}
+
+.footer div {
+    width: 100%;
+    max-width: 300px;
+}
