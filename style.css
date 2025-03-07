@@ -149,62 +149,194 @@ body {
 /* Tercera sección (Servicios) */
 .tercerSeccion {
     text-align: center;
-    padding: 50px;
-    background: #151414;
-}
-
-.contenedorServicios {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.servicioTecnico, .solucionesSoftware, .reparacionPantalla {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-}
-
-/* Sección de marcas */
-.cuartaSeccion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px;
-    background: white;
-    color: #222;
-}
-
-.cuartaSeccion div {
-    text-align: center;
-    width: 100%;
-    max-width: 300px;
-    padding: 20px;
-}
-
-/* Quinta sección (Contacto) */
-.quintaSeccion {
-    text-align: center;
-    padding: 50px;
-    background: #0056b3;
+    padding: 60px 20px;
+    background: #ffffff;
     color: white;
 }
 
+.tercerSeccion h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los servicios */
+.contenedorServicios {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Hace que todas las tarjetas tengan la misma altura */
+    flex-wrap: wrap;
+    gap: 30px; /* Más espacio entre las tarjetas */
+    margin-top: 40px;
+}
+
+/* Tarjetas de servicios */
+.servicioTecnico, 
+.solucionesSoftware, 
+.reparacionPantalla {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover */
+.servicioTecnico:hover, 
+.solucionesSoftware:hover, 
+.reparacionPantalla:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos dentro de las tarjetas */
+.servicioTecnico img, 
+.solucionesSoftware img, 
+.reparacionPantalla img {
+    width: 70px; /* Tamaño uniforme */
+    margin-bottom: 15px;
+}
+
+/* Títulos de los servicios */
+.servicioTecnico h3, 
+.solucionesSoftware h3, 
+.reparacionPantalla h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #151414;
+}
+
+/* Descripción del servicio */
+.servicioTecnico p, 
+.solucionesSoftware p, 
+.reparacionPantalla p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+
+/* Sección de marcas */
+.cuartaSeccion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 50px; /* Espaciado amplio */
+    padding: 50px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* Imágenes súper grandes */
+.cuartaSeccion img {
+    width: 100%; /* Ocupa todo el espacio disponible */
+    max-width: 400px; /* Mucho más grande */
+    display: block;
+    margin: 0 auto 15px; /* Centrado */
+}
+
+/* Títulos de las marcas */
+.cuartaSeccion h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2rem;
+    color: #16182E;
+    margin-bottom: 8px;
+}
+
+/* Texto bien alineado */
+.cuartaSeccion p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.4;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .cuartaSeccion {
+        grid-template-columns: 1fr; /* Una columna en móvil */
+    }
+
+    .cuartaSeccion img {
+        max-width: 500px; /* Aún más grande en pantallas pequeñas */
+    }
+}
+
+
+
+/* Quinta sección (Contacto) - Fondo blanco */
+.quintaSeccion {
+    background: #ffffff; /* Fondo completamente blanco */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Contenedor azul */
+.contactoCaja {
+    background: #357ABD; /* Azul sólido */
+    color: rgb(19, 18, 18);
+    padding: 50px 40px;
+    max-width: 650px;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título "Contáctanos" */
+.contactoCaja h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #191919;
+}
+
+/* Descripción */
+.contactoCaja p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 500px;
+    margin: 0 auto 25px auto;
+}
+
+/* Botón de contacto */
 .botonContacto button {
-    background: #ffcc00;
+    background: white;
     border: none;
-    padding: 10px 20px;
+    padding: 14px 28px;
     font-size: 18px;
-    cursor: pointer;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    color: #357ABD;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Efecto hover en el botón */
+.botonContacto button:hover {
+    background: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background: #16182E; /* Color de fondo */
+    color: white;
+    padding: 50px 20px;
+    text-align: left;
 }
 
 /* Footer */
@@ -212,13 +344,59 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
-    background: #222;
+    gap: 40px;
+    background: #16182E;
     color: white;
-    padding: 30px;
+    padding: 50px 20px;
+    text-align: left;
+    position: relative;
 }
 
-.footer div {
+/* Espacio para el logo */
+.logoContainer {
     width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo del logo */
+.logoContainer img {
+    max-width: 150px; /* Tamaño mediano */
+    height: auto;
+}
+
+/* Columnas del footer */
+.footer div {
     max-width: 300px;
 }
+
+/* Estilo de títulos */
+.footer h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Listas */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    font-size: 0.95rem;
+    line-height: 1.8;
+}
+
+/* Marca de agua */
+.marcaAgua {
+    background: #16182E;
+    text-align: center;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
