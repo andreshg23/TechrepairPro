@@ -77,28 +77,80 @@ body {
     border-radius: 5px;
 }
 
-/* Segunda sección */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@400;700&display=swap');
+
 .segundaSeccion {
-    text-align: center;
-    padding: 50px;
-    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 50px 10%;
+    padding-bottom: 80px; /* Sección más alta para evitar corte */
+    position: relative;
 }
 
-.segundaSeccion h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.contenidoSeccion2 {
+    width: 50%;
+    text-align: left;
+}
+
+.contenidoSeccion2 h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 30   px;
+    color: #5C98D2;
+}
+
+.contenidoSeccion2 h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #16182E;
+    margin: 10px 0;
+    line-height:1
+}
+
+.contenidoSeccion2 p {
+    font-size: 18px;
+    color: #333;
+}
+
+.celular1 {
+    width: 50%;
+    text-align: right;
+}
+
+.celular1 img {
+    width: 100%;
+    height: auto;
 }
 
 .cita {
-    font-style: italic;
-    color: #777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #16182E;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20px; /* Ajustado para que no se corte */
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+
+
+
 
 /* Tercera sección (Servicios) */
 .tercerSeccion {
     text-align: center;
     padding: 50px;
-    background: #e6e6e6;
+    background: #151414;
 }
 
 .contenedorServicios {
