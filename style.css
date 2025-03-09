@@ -1,36 +1,90 @@
-/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #5C98D2;
+    box-sizing: border-box;
     color: #ffffff;
 }
 
-/* Barra de navegación */
+.barraNavegacion {
+    background-color: #4a90e2;
+    padding: 10px;
+    color: white;
+}
+
+.barraNavegacion  .contenedorNavegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 35px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.menu { 
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-right: 20px;
+}
+
+.menu ul li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.botonAsesor {
+    padding: 0 15px;
+    gap: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.botonAsesor h3 {
+    color: #5C98D2;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+.botonAsesor img {
+    width: 30px;
+}
+/*
+
 .barraNavegacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: #;
     color: white;
 }
 
-.barraNavegacion .logo img {
-    height: 70px;
+.logo {
+    width: 70px;
 }
 
 .seccionesNavegacion a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 15px;
-    font-weight: bold;
+    font-weight: 300;
     font-size: 20px;
-}
-
-.logoBienvenido {
-    width: 150px;
 }
 
 .asesor {
@@ -45,25 +99,48 @@ body {
 .asesor img {
     height: 30px;
     margin-right: 10px;
-}
+} */
 
 /* Primera sección */
+
+
+
+.logoBienvenido {
+    width: 250px;
+}
+
 .primerSeccion {
+    background-color: #16182e;
+    background-image: url(img/reparacion1.jpg);
+    background-blend-mode: overlay;    background-position: center;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 50px;
-    background: #0056b3;
+    padding: 125px 150px;
     color: white;
 }
 
-.primerSeccion h1 {
-    font-size: 36px;
+.contenedorSeccion{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorSeccion h1 {
+    margin-bottom: 1px;
+    font-size: 50px;
+    font-family: 'Righteous', sans-serif;
+    line-height: 1;
+}
+
+.contenedorSeccion span {
+    font-size: 50px;
+    color: #5c98d2;
 }
 
 .primerSeccion p {
-    font-size: 18px;
-    margin: 20px 0;
+    font-size: 15px;
+    margin-bottom: 30px;
 }
 
 .primerSeccion button {
@@ -73,90 +150,78 @@ body {
     font-size: 18px;
     cursor: pointer;
     color: #ffffff;
-    font-weight: bold;
+    font-weight: 700;
     border-radius: 5px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Montserrat:wght@400;700&display=swap');
+/*segunda seccion */
 
 .segundaSeccion {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 150px;
     justify-content: space-between;
     background-color: #ffffff;
     padding: 50px 10%;
-    padding-bottom: 80px; /* Sección más alta para evitar corte */
-    position: relative;
-}
-
-.contenidoSeccion2 {
-    width: 50%;
-    text-align: left;
+    padding-bottom: 90px;
 }
 
 .contenidoSeccion2 h3 {
     font-family: 'Righteous', sans-serif;
-    font-size: 30   px;
+    font-size: 40px;
     color: #5C98D2;
+    margin: 5px 0;
 }
 
 .contenidoSeccion2 h2 {
     font-family: 'Righteous', sans-serif;
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 700;
     color: #16182E;
     margin: 10px 0;
     line-height:1
 }
 
 .contenidoSeccion2 p {
-    font-size: 18px;
+    font-size: 15px;
     color: #333;
+    padding-right: 165px;
 }
 
-.celular1 {
-    width: 50%;
-    text-align: right;
+.contenidoSeccion2 p span {
+    font-weight: 700;
 }
 
 .celular1 img {
-    width: 100%;
-    height: auto;
+    width: 500px;
 }
 
 .cita {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 700;
     color: #16182E;
+    bottom: 20px;
     text-align: center;
-    width: 100%;
-    position: absolute;
-    bottom: 20px; /* Ajustado para que no se corte */
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 100px;
 }
-
-
-
-
 
 /* Tercera sección (Servicios) */
 .tercerSeccion {
+    background-color: #16182e;
+    background-image: url(img/reparacion2.jpg);
+    background-blend-mode: overlay;    background-position: center;
+    background-size: cover;
     text-align: center;
-    padding: 60px 20px;
-    background: #ffffff;
-    color: white;
+    padding: 25px 0 75px 0;
 }
 
 .tercerSeccion h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 50px;
+    margin-bottom: 70px;
+    color: white;
 }
 
 /* Contenedor de los servicios */
@@ -203,6 +268,7 @@ body {
 .servicioTecnico h3, 
 .solucionesSoftware h3, 
 .reparacionPantalla h3 {
+    font-family: 'Righteous', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #151414;
@@ -268,83 +334,36 @@ body {
 
 /* Quinta sección (Contacto) - Fondo blanco */
 .quintaSeccion {
-    background: #ffffff; /* Fondo completamente blanco */
-    padding: 80px 20px;
+    padding: 80px;
     text-align: center;
 }
 
-/* Contenedor azul */
-.contactoCaja {
-    background: #357ABD; /* Azul sólido */
-    color: rgb(19, 18, 18);
-    padding: 50px 40px;
-    max-width: 650px;
-    margin: 0 auto;
-    border-radius: 25px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Título "Contáctanos" */
-.contactoCaja h2 {
-    font-family: 'Righteous', sans-serif;
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #191919;
-}
-
-/* Descripción */
-.contactoCaja p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 500px;
-    margin: 0 auto 25px auto;
-}
-
-/* Botón de contacto */
 .botonContacto button {
-    background: white;
+    background: #357ABD;
     border: none;
     padding: 14px 28px;
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #357ABD;
+    color: white;
     cursor: pointer;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Efecto hover en el botón */
 .botonContacto button:hover {
-    background: #f1f1f1;
+    background: #5da8f2;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     transform: translateY(-3px);
 }
 
-
-
 /* Footer */
 .footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
-    background: #16182E; /* Color de fondo */
-    color: white;
-    padding: 50px 20px;
-    text-align: left;
-}
-
-/* Footer */
-.footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
+    gap: 70px;
     background: #16182E;
     color: white;
     padding: 50px 20px;
@@ -352,27 +371,18 @@ body {
     position: relative;
 }
 
-/* Espacio para el logo */
-.logoContainer {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Estilo del logo */
-.logoContainer img {
-    max-width: 150px; /* Tamaño mediano */
-    height: auto;
-}
-
 /* Columnas del footer */
 .footer div {
     max-width: 300px;
 }
 
+.footer p{
+    font-size: 12px;
+}
+
 /* Estilo de títulos */
 .footer h3 {
-    font-size: 1.3rem;
+    font-size: 15px;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -384,8 +394,8 @@ body {
 }
 
 .footer li {
-    font-size: 0.95rem;
-    line-height: 1.8;
+    font-size: 12px;
+    line-height: 1.2;
 }
 
 /* Marca de agua */
@@ -394,9 +404,7 @@ body {
     text-align: center;
     padding: 15px;
     color: #ffffff;
-    font-size: 0.85rem;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
-
-
